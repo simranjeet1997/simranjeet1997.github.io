@@ -193,7 +193,7 @@ header t23{
 }
   @media(max-width: 768px)
   {
-    header nav{
+    header nav, .t10{
   	            float: right;
   	            margin-top: 22px;
   	            color: black;
