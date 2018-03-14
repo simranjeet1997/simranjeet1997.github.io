@@ -1,145 +1,147 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>My Facebook page</title>
+	 <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+	<title>My Profile</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
-<header>
-	<div class="container">
-		<div id="branding">
-			<h1>facebook</h1>
-		</div>
-	</div>
-	<nav>
-		<div class="t2" style="height: 111px;width: 459px">
-			<form class="t3">
 
-				<table class="t5" style="width: 469px;">
+ 
 
-				      <tr> 
-				            <td class="t6" style="font-size: 15px;">Email or Phone</td>
-				            <td class="t6" style="font-size: 15px;">Password</td>
-				            <td class="t10">login</td>
-				      </tr>
-				      <tr>
-					        <td><input class="t11" type="text" name="email"></td>
-					        <td><input class="t11" type="password" name="Password"></td>
-				      </tr>
-				      <tr>
-					     <td>
-					       <p class="t7" style="font-size: 10px;"></p>
-					
-					     </td>
-				      </tr>
-				  
-				</table>
-			</div>
 
-			</form>
-		</div>
-	</nav>
-</header>
+<body onload="myFunction()" style="margin:0;">
 
-<section id="showcase">
-	<div class="container">
-		<h1> Create a new account</h1>
-           <p class="sk">It's free and always will be.</p>
-        <form>
-            <input type="text" class="table" value="" placeholder="Firstname">
-            <br>
-            <br>
-            <input type="email" class="table" value="" placeholder="Mobile number or email address">
-            <br>
-            <br>
-            <input type="password" class="table" value="" placeholder="New Password">
-            <p class="t20">Birthday</p>
-	<select class="t21">
-		<option>01</option>
-		<option>02</option>
-		<option>03</option>
-		<option>04</option>
-		<option>05</option>
-		<option>06</option>
-		<option>07</option>
-		<option>08</option>
-		<option>09</option>
-		<option>10</option>
-		<option>11</option>
-		<option>12</option>
-		<option>13</option>
-		<option>14</option>
-		<option>15</option>
-		<option>16</option>
-		<option>17</option>
-		<option>18</option>
-		<option>19</option>
-		<option>20</option>
-		<option>21</option>
-		<option>22</option>
-		<option>23</option>
-		<option>24</option>
-		<option>25</option>
-		<option>26</option>
-		<option>27</option>
-		<option>28</option>
-		<option>29</option>
-		<option>30</option>
-		<option>31</option>
-	</select>
-	<select class="t22">
-		<option value="january">january</option>   
-                      <option value="february">february</option>
-                      <option value="march">march</option>
-                       <option value="april">april</option>
-                        <option value="may">may</option>
-                      <option value="june">june</option> 
-                       <option value="july">july</option>
-                        <option value="august">august</option>
-                          <option value="september">september</option>
-                        <option value="october">october</option>
-                        <option value="novomber">novomber</option>
-                         <option value="december">december</option>
-	</select>
-	<select class="t22">
-		<option>2000</option>
-		<option>2001</option>
-		<option>2002</option>
-		<option>2003</option>
-		<option>2004</option>
-		<option>2005</option>
-		<option>2006</option>
-		<option>2007</option>
-		<option>2008</option>
-		<option>2009</option>
-		<option>2010</option>
-		<option>2011</option>
-		<option>2012</option>
-		<option>2013</option>
-		<option>2014</option>
-		<option>2015</option>
-		<option>2016</option>
-		<option>2017</option>
-		<option>2018</option>
-	</select>
-	<br>
-				  <input class="t23" type="radio"name="sex"value="male"checked>Male
+<div id="loader"></div>
 
-                  <input class="t24" type="radio"name="sex"value="female">female
+<div style="display:none;" id="myDiv" class="animate-bottom">
 
-                  <p class="t26">By clicking Create Account, you agree to our <b class="t25">Terms</b> and confirm</p>
-                  <p class="t26">that you have read our <b class="t25">Data Policy</b>, including our <b class="t25">Cookie Use </b></p>
-                  <p class="t26"> <b class="t25">Policy</b>. You may receive SMS message notifications from</p>
-                  <p class="t26">Facebook and can opt out at any time.</p>
-                  <button class="t27">
-                  	<p class="28" style="height: 20px; width: 124px;">Create account</p>
-                  </button>
-        </form>
-	</div>
-</section>
+  <div class="complete">
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="about.html">About Me</a>
+        <a href="skills.html">Skills</a>
+        <a href="#">Blogs</a>
+        <a href="#">Contact</a>
+      </div>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+            <script>
+              function openNav() {
+              document.getElementById("mySidenav").style.width = "100%";
+                }
+
+                function closeNav() {
+                 document.getElementById("mySidenav").style.width = "0";
+                           }
+            </script>
+
+  
+              <div class="logo">Simranjeet</div>	
+          <div class="sidebar">
+  
+             <ul>
+  
+                       <li style="margin: 0px 0px -49px 106px;width:162px;height: 99px;"><a class="active" href="" style="padding-right: 66px; padding-left: 12px;">Home</a></li>
+                       
+                       <li style="margin: -114px 0px 7px 203px; width:172px;height: 99px;"><a  href="about.html" style="padding-right: 85px; padding-left: 12px;">About</a></li>
+
+             </ul>
+ 
+          </div>
+
+        <div class="card">
+           <img src="photo.jpg" alt="John" style="width:100%">
+            <h1>Simranjeet Kaur</h1>
+            <p class="title">Student</p>
+            <p>JECRC College</p>
+        </div>
+
+              
+        <div class=left>
+	          <div class="fb">
+		        <a href="https://www.facebook.com">
+		        <i class="fa fa-facebook-official" style="font-size:28px;color:black"></i>
+	            </a>
+	          </div>
+	          <div class=link>
+                <a href="https://www.linkedin.com/in/simranjeet-kaur-0519b0156">
+		        <i class="fa fa-linkedin-square" style="font-size:28px;color:black"></i>
+	            </a>
+	         </div>
+	         <div class="git">
+		        <a href="https://github.com/simranjeet1997">
+		        <i class="fa fa-github-alt" style="font-size:28px;color:black"></i>
+	           </a>
+	         </div>
+	
+        </div>
+              
+ </div>
+
+
+
+<div id="about" class="about">
+    <div class="container">
+      <h3 class="title"> About Me</h3>
+      
+        <p>Hi , this is Simranjeet Kaur. I am 20 years old and pursuing my B.Tech in INFORMATION TECHNOLOGY from JECRC Foundation Jaipur. I'm an aspiring Web Developer and also trying to learn new things everyday. I am passionate about the things I do.</p>
+      
+      
+      
+    </div>
+  </div>
+
+
+<div>
+   <div class="glance">
+	   <h3 class="title">Glance</h1>
+   </div>
+   <div class="row">
+       <div class="column">
+        <h2 style="font-size: 240%;color: #008B8B";><b>EDUCATION</b></h2>
+        <p style="font-size: 175%"> <i>I have completed my education from ST.Peters senior sec. school and higher Education From S.R.International School.</i></p>
+        <p style="font-size: 175%"> <i>Currently I am pursuing my B.Tech in Information Technology from JECRC College Jaipur.</i></p>
+
+       </div>
+
+       <div class="column">
+         <h2 style="font-size: 240%;color: #008B8B">SKILLs</h2>
+         <p style="font-size: 175%"><i>I love to learn new things everday and working on myself to enhance my skills</i></p>
+         <p style="font-size: 150%"><i>I have an intermediate knowldge of:</i></p>
+         <p style="font-size: 120%"><i>C, C++ , HTML, CSS, JAVASCRIPT</i></p>
+          <p style="font-size: 150%"><i>Currenlty learning on:</i></p>
+         <p style="font-size: 120%"><i>JAVA and Backend connecting stuff. </i></p>
+       </div>
+  
+   </div>
+</div> 
+<div class="footer">
+    <div class="container">
+      <p>© 2018 All rights reserved | Design by SIMRANJEET KAUR</p>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+<script>
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
 
 </body>
 </html>
