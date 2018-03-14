@@ -1,0 +1,338 @@
+
+* {
+  box-sizing: border-box;
+
+}
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+ul
+{
+	height: 172px;
+	width: 113px;
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+    
+    top: 0;
+    width: 100%;
+
+}
+li{
+	float: middle-right;
+	 border-radius: 10px;
+}
+
+}
+.sidebar{
+	margin:22px 1px 15px 84px;
+
+}
+
+.active {
+    background-color: white;
+}
+li a{
+	height: 4px;
+	width: 1px;
+    text-decoration: none;
+    display: block;
+    margin: 15px 0px 7px 203px;
+    color: black;
+    text-align: center;
+    border-radius: 3px;
+    padding: 5px 112px 39px 27px;
+    font-size: 22px;
+}
+.complete{
+	background-image: url("cover.jpg");
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+	width: 100%;
+	height: 585px;
+
+}
+.logo{
+	height: 30px;
+	width: 142px;
+	color:black;
+	margin-top: -22px; 
+	padding: 27px 1px 1px 1px;
+	font-size: 30px;
+	 font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 200px;
+  margin: -90px 1px 0px 518px;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+
+.menu{
+	width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    display: none;
+}
+
+
+.left{
+	
+	float: right;
+	height: 13%;
+	width:18%;
+	margin:-503px 5px 0px 0px; 
+	cursor: pointer;
+
+}
+
+.link{
+	margin: -29px 0px 1px 59px;
+}
+.git{
+	margin: -29px 0px 1px 116px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align:center;
+}
+span{
+	display: none;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+
+}
+
+.sidenav a:hover{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+#para{
+    font-size: 152%;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 15px;
+    bo
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.about{
+  padding:6em 0;
+}
+h3.title {
+    font-size: 4em;
+    text-align: center;
+    color: #008B8B;
+    border-bottom: 4px double rgba(300, 197, 106, 0.35);
+    padding-bottom: 0.2em;
+  margin-bottom: 1em;
+}
+p {
+    font-size: 1em;
+    color: #999;
+    line-height: 1.8em;
+}
+.about-right {
+    padding-left: 5em;
+}
+.about-right ul {
+    border: 3px double #008B8B;
+    padding: 1em 2em;
+}
+.about-right h5 {
+    font-size: 2em;
+    text-align: center;
+    color: #008B8B;
+}
+.about-right ul li {
+    display: block;
+    color: #999;
+    margin: 1em 0;
+  font-size:1em;
+}
+.about-right ul li span.glyphicon {
+    font-size: 0.8em;
+  margin-right: 6px;
+}
+.footer {
+    padding: 2em 0;
+    text-align: center;
+    background: #1F1F1F;
+}
+.footer p {
+    color: #fff;
+  font-size: 1.1em;
+}
+.footer p a{
+    color: #F7E612;
+}
+.footer p a:hover{
+    color: #fff;
+}
+
+@media (max-width:700px) {
+	.sidebar{
+		display: none;
+	}
+	.complete{
+		
+	
+   
+	width: 100%;
+	height: 585px;
+
+	}
+	.card{
+		width: 100%;
+		margin: 134px 1px 1px  1px;
+	}
+	.logo{
+		font-size: 118%;
+		color: white;
+		padding: 0px 1px -1px 1px;
+	}
+	.menu{
+		width: 35px;
+        height: 5px;
+        background-color: black;
+        margin: 1px 0;
+	}
+	.left{
+		float: right;
+	    display: block;
+		margin:-592px 130px 0px 15px;
+	}
+	.fb{
+		float: right;
+		display: block;
+		margin: 15px -31px 1px 1px;
+	}
+	.link{
+		float: right;
+		display: block;
+		margin: 14px -116px 1px 1px;
+	}
+	.git{
+		float: right;
+		display: block;
+		margin: 14px -75px 1px 1px;
+	}
+	.name{
+        margin: -6px 1px 3px 170px;
+	    font-size: 50%;		
+	}
+	span{
+		position: static;
+		display: block;
+		margin: 1px 1px 1px -281px;
+	}
+
+	.column {
+        width: 100%;
+    }
+	.logo{
+		display: none;
+	}
+
+.sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+	}
+}
